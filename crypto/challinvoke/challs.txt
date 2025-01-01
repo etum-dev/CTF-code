@@ -1,0 +1,22 @@
+
+/* cryptohack */
+bytes_and_big_integers "11515195063862318899931685488813747395775516287289682636499965282714637259206269"
+big_num := new(big.Int)
+big_num, ok := big_num.SetString(bytes_and_big_integers, 10) //base10
+
+
+
+"Cryptohacks chall 2:
+	myAscii := [23]int{99, 114, 121, 112, 116, 111, 123, 65, 83, 67, 73, 73, 95, 112, 114, 49, 110, 116, 52, 98, 108, 51, 125}
+	ascii := hex_to_b64.ArrToAscii(myAscii[:])
+
+
+
+/* cryptopals */
+func CryptoPals() {
+	//chall 1
+	myhex := *argPtr
+	decode := hex_to_b64.Hexb64(myhex)
+	fmt.Println(decode)
+
+}
